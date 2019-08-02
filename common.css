@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.header {
+	width: 330px;
+	height:25px;
+	margin: 10;
+	padding: 10px;
+	background-color: #e6e6fa;
+}
+
+.main {
+	line-height: 1.5em;
+}
+
+.titleName {
+	text-align: center;
+	font-size: large;
+	font-weight: normal;
+}
+
+.date {
+	text-align: center;
+	font-size: large;
+}
+
+.itemName {
+	display: inline-block;
+}
+
+.itemNum {
+	display: inline-block;
+}
+
+.message {
+	font-weight: normal;
+	color: blue;
+}
+
+.alertmessage {
+	font-weight: normal;
+	color: red;
+}
+
+.footer {
+	line-height: 1.5em;
+	width: 310px;
+	text-align: left;
+}

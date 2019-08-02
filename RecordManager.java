@@ -28,14 +28,13 @@ public final class RecordManager {
 
     /**
      * 引数で指定された商品名に一致する商品データを返却
-     * @param name 検索キーとなる商品名
+     * @param  goodsName 検索キーとなる商品名
      * @return 検索結果の商品データ
      */
     public static Item findItem(String goodsName) {
-    	int index = list.indexOf(new Item("", goodsName, 0,0,0));
-    	return list.get(index);
+        int index = list.indexOf(new Item("", goodsName, 0, 0, 0));
+        return list.get(index);
     }
-
 
     /**
      * 商品のデータを返す。
@@ -58,12 +57,13 @@ public final class RecordManager {
     }
 
     /**
-	 * プルダウンリストの初期値セットデータを取得する
+     * プルダウンリストの初期値セットデータを取得する
      * @return 先頭の商品の名前
      */
+    public static String getFirstItemName() {
 
-	public static String getFirstItemName() {
-		return  list.get(0).getName();
-	}
+        return list.get(0).getName();
+    }
 }
+
 //Copyright 2016-2019 FUJITSU APPLICATIONS LIMITED

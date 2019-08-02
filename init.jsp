@@ -10,12 +10,13 @@
 <head>
 <link rel="stylesheet" type="text/css"
 	href="/sales/resources/css/common.css" />
-<title>山田オンラインショップ(初期画面)</title>
+<title>田中オンラインショップ(初期画面)</title>
 </head>
+
 <body>
 	<form:form modelAttribute="salesForm" action="/sales/system">
 		<div class="header">
-			<span class="titleName">山田オンラインショップ</span>
+			<span class="titleName">田中オンラインショップ</span>
 			<%--div class="date"><%=LocalDate.now()%></div--%>
 			<fmt:formatDate value="${date}" pattern="yyyy年MM月dd日（E）" />
 		</div>
@@ -26,12 +27,17 @@
 				<form:select path="goodsName" items="${nameList}" />
 			</div>
 			<div>
-				<span class="itemnum">点数:</span>
-				<form:input path="point" value="1" />
+				<span class="itemNum">点数:</span>
+				<form:input path="point" value="${point}" />
+
+
 
 			</div>
 			<div class="message">
 				<c:out value="${message}" />
+			</div>
+			<div class="alertmessage">
+				<c:out value="${alertmessage}"/>
 			</div>
 
 		</div>
